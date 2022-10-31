@@ -1,2 +1,2 @@
 # Food-Version
-## This Repository Contains Various Types of Reginal Foods and Recipes of India 
+## This Repository Contains Various Types of Regional Foods and Recipes of India 
