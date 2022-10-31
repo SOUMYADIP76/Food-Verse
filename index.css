@@ -15,23 +15,6 @@ font-family: 'Poor Story', cursive;
 font-family: 'Sansita Swashed', cursive;
 font-family: 'Shadows Into Light', cursive;
 */
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arvo&family=Cookie&family=Courgette&family=Dancing+Script&family=Fasthand&family=Great+Vibes&family=IBM+Plex+Mono:wght@100&family=Lobster&family=Lobster+Two&family=Pacifico&family=Poor+Story&family=Sansita+Swashed:wght@300&family=Shadows+Into+Light&display=swap');
-/*
-font-family: 'Abril Fatface', cursive;
-font-family: 'Arvo', serif;
-font-family: 'Cookie', cursive;
-font-family: 'Courgette', cursive;
-font-family: 'Dancing Script', cursive;
-font-family: 'Fasthand', cursive;
-font-family: 'Great Vibes', cursive;
-font-family: 'IBM Plex Mono', monospace;
-font-family: 'Lobster', cursive;
-font-family: 'Lobster Two', cursive;
-font-family: 'Pacifico', cursive;
-font-family: 'Poor Story', cursive;
-font-family: 'Sansita Swashed', cursive;
-font-family: 'Shadows Into Light', cursive;
-*/
 * {
     margin: 0;
     padding: 0;
@@ -81,9 +64,93 @@ header {
 .middle-content{
     height:76vh;
     width: 100vw;
+    background-image: url('./src/bkg.jpg');
+    overflow-y: scroll;
 }
 
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50px);
+  }
+  
+  .center .stateBlock {
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 270px;
+    min-height: 300px;
+    width: 100%;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 15px black !important;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(18px);
+    padding-bottom: 0px;
+  }
+  .stateBlock:hover {
+    transition: display 0.3s;
+  }
+  .stateBlock img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 300px;
+    width: auto;
+  }
+  
+  .description {
+    color: white;
+    display: none;
+  }
+  h4 {
+    color: #6c63ff;
+  }
+  .description a {
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 8px;
+    background-color: #6c63ff;
+    color: white;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.781);
+  }
+  .description a:hover {
+    color: #6c63ff;
+    background-color: white;
+    transition: 0.3s all linear;
+  }
+  .gallery_header input {
+    width: 35%;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    padding: 5px;
+    margin: 25px;
+    margin-top: 35px;
+    margin-bottom: 0px;
+    padding-left: 15px;
+    font-size: 1rem;
+    font-family: cursive;
+    background-color: #ffffffd3;
+    border: none;
+    color: rgb(100, 100, 100);
+  }
+  .gallery_header input:focus {
+    box-shadow: 0px 0px 14px rgb(70, 70, 70);
+  }
+  .container-fluid_1 {
+    display: flex;
+    flex-direction: column;
+  }
 
+  
 .footer-container{
     display: flex;
     background-color: rgba(63, 63, 145, 0.831);
@@ -92,59 +159,5 @@ header {
     align-items: center;
     color: white;
 }
-* {
-    margin: 0;
-    padding: 0;
-}
 
-header {
-    background-color: rgba(26, 153, 184, 0.728);
-}
-
-.header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.left-section{
-    display: flex;
-    align-items: center;
-    padding-left: 50px;
-    font-size: 30px;
-    font-weight: bolder;
-    color: rgb(0, 0, 0);
-    letter-spacing: 3px;
-}
-.right-section ul {
-    display: flex;
-    flex-direction: row;
-    padding: 2.5vw;
-}
-
-.right-section ul li {
-    list-style: none;
-}
-.right-section ul li a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-     font-size: 20px;
-    padding: 20px;
-}
-
-.middle-content{
-    height:76vh;
-    width: 100vw;
-}
-.main-container{
-    display: flex;
-    flex-direction: row;
-}
-.main-container .images img{
-    padding: 40px ;
-    height: 40vh;
-    width: 18vw;
-}
-.main-container .images h5{
-    padding-left: 50px ;
-}
 
