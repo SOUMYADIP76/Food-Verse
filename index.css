@@ -15,6 +15,83 @@ font-family: 'Poor Story', cursive;
 font-family: 'Sansita Swashed', cursive;
 font-family: 'Shadows Into Light', cursive;
 */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arvo&family=Cookie&family=Courgette&family=Dancing+Script&family=Fasthand&family=Great+Vibes&family=IBM+Plex+Mono:wght@100&family=Lobster&family=Lobster+Two&family=Pacifico&family=Poor+Story&family=Sansita+Swashed:wght@300&family=Shadows+Into+Light&display=swap');
+/*
+font-family: 'Abril Fatface', cursive;
+font-family: 'Arvo', serif;
+font-family: 'Cookie', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fasthand', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'IBM Plex Mono', monospace;
+font-family: 'Lobster', cursive;
+font-family: 'Lobster Two', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Poor Story', cursive;
+font-family: 'Sansita Swashed', cursive;
+font-family: 'Shadows Into Light', cursive;
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(26, 153, 184, 0.728);
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 30px;
+    font-weight: bolder;
+    color: blue;
+    letter-spacing: 3px;
+}
+.right-section ul {
+    display: flex;
+    flex-direction: row;
+    padding: 2.5vw;
+}
+
+.right-section ul li {
+    list-style: none;
+    
+}
+.right-section ul li a:hover{
+    background-color: white;
+    color: black;
+}
+.right-section ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.middle-content{
+    height:76vh;
+    width: 100vw;
+}
+
+
+.footer-container{
+    display: flex;
+    background-color: rgba(63, 63, 145, 0.831);
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
 * {
     margin: 0;
     padding: 0;
