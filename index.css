@@ -19,7 +19,7 @@ font-family: 'Shadows Into Light', cursive;
     margin: 0;
     padding: 0;
 }
-
+/* Header Section*/
 header {
     background-color: rgba(26, 153, 184, 0.728);
 }
@@ -62,12 +62,36 @@ header {
 }
 
 .middle-content{
-    height:76vh;
+    height:68.5vh;
     width: 100vw;
     background-image: url('./src/bkg.jpg');
+    position: relative;
     overflow-y: scroll;
-}
+  }
+/*Search Bar*/
 
+.search {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+#search{
+  width: 30vw;
+  height: 6vh;
+  border-top-left-radius: 15px;
+  border: none;
+}
+.search > i {
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  background-color: white;
+  border-bottom-right-radius: 15px;
+}
+input[type=text]{
+  padding-left: 18px;
+}
+/*Content Cards*/
 .center {
     display: flex;
     flex-wrap: wrap;
@@ -149,6 +173,10 @@ header {
     display: flex;
     flex-direction: column;
   }
+
+  /*Footer Section*/
+
+
 .footer-content{
   background-color: rgba(63, 63, 145, 0.831);
 }
@@ -179,7 +207,6 @@ header {
     text-decoration: none;
     transition: all 0.5s ease;
 }
-/* Facebook */
 .fa-facebook {
   background: #3B5998;
   color: white;

@@ -2,7 +2,7 @@ console.log("Js Connected");
 
 
 
-const stateDesc = [
+const foodDescription = [
     {
         foodImage:
             'https://madhurasrecipe.com/wp-content/uploads/2020/10/Puneri-Misal-Marathi-Recipe-feature.jpg',
@@ -63,6 +63,7 @@ const stateDesc = [
 ];
 
 const imageBlock = document.getElementById('center');
+const searchBar = document.getElementById('search');
 
 const showFood = (data) => {
     data.forEach((item) => {
@@ -78,7 +79,7 @@ const showFood = (data) => {
     });
 };
 
-showFood(stateDesc);
+showFood(foodDescription);
 
 const stateCard = imageBlock.querySelectorAll('.stateBlock');
 for (let i = 0; i < stateCard.length; i++) {
@@ -106,3 +107,13 @@ for (let i = 0; i < stateCard.length; i++) {
         image.style.display = 'block';
     });
 }
+
+
+searchBar.addEventListener('keyup', (input_value) => {
+    const inputValue = input_value.target.value.toLowerCase();
+    const findFood = foodDescription.filter((data) => {
+      return data.foodName.toLowerCase().includes(inputValue);
+    });
+    imageBlock.innerHTML = '';
+    showFood(findFood);
+  });
